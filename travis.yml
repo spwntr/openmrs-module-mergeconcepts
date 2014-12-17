@@ -3,7 +3,7 @@ jdk:
  - openjdk6
  - openjdk7
  - oraclejdk7
-script: mvn clean install --batch-mode
+script: mvn clean package test
 matrix:
   allow_failures:
     - jdk: oraclejdk7
